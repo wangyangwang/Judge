@@ -1,0 +1,22 @@
+<div id="header"></div><img src="http://itp.nyu.edu/~yw1080/sinatra/judge/image/logo.png"/>
+<p id="notice"><a href="http://itp.nyu.edu/~yw1080/sinatra/judge/newpost">click here to POST your Proposition</a></p></div>
+</br>
+<% for newPost in @posts %>
+  <div class="bodyofposts">
+      <p class="postbody"><%= newPost.body %></p>
+      <p class="postby">post by <%= newPost.nickname %></p>
+      <form action="http://itp.nyu.edu/~yw1080/sinatra/judge/<%= newPost.id %>" method="POST">
+        <p>
+          <input type="radio" name="judge" value="agree">Agree: <%= newPost.agree %></input>
+          <input type="radio" name="judge" value="disagree">Disagree: <%= newPost.disagree %></input>
+        </p>
+        <input class="submit" type="submit" value="Judge"/>
+        </br></br></br>
+      </form>
+  </div>
+
+      
+      
+<% end %>   
+    
+

@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title><%= @title %></title>
+    <style type="text/css">
+      body {
+        margin: 30px;
+        background: rgb(255,255,255);
+        color: rgb(60,60,60);
+        font-family: serif;
+        
+      }
+      
+      a {
+        color: rgb(40,40,40);
+        
+      }
+      .postbody {
+        font-size: 22px;
+        padding: -8px;
+        
+      }
+      .postby {
+        font-size: 12px;
+        color: rgb(72, 72, 72);
+        margin-top: -18px;
+        padding-left: -3px;
+        
+      }
+      #notice {
+        font-size: 18px;
+      }
+      
+      form {
+        font-size: 15px;
+        padding: -3px;
+        padding-left: -6px;
+      }
+      .bodyofposts {
+        width: 400px;
+       
+      }
+      
+      .resultpage {
+        text-align: center;
+      }
+      
+      .newpost {
+        text-align: center;
+      }
+      
+      #bottom {
+        text-align: center;
+        font-size: 12px;
+        letter-spacing: 2.5px;
+        margin: 40px;
+      }
+      
+      input {
+        border: hidden;
+        background: rgb(30,30,30);
+        font-size: 14px;
+        padding-left:  10px;
+        padding-right: 10px;
+        color: rgb(255,255,255);
+      }
+      
+      #header {
+        padding: 0px;
+        border-bottom:1px solid #000000;
+      }
+      
+     
+      
+    </style>
+    <script src="judge/views/jquery-1.8.3.min.js"></script>
+    <script src="judge/views/myLibraries.js"></script>
+  </head>
+ 
+  <body>    
+      <%= yield %>
+      <div id="bottom"><p>Designed by Yang Wang@New York University</br>Using Ruby&Sinatra</br>December, 2012</p></div>
+  </body>
+</html>
